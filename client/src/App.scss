@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+$blue: #1877f2;
+$black: #333;
+$red: #f12b2c;
+$green: #29cc97;
+$yellow: #fec400;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins";
+  a {
+    text-decoration: none;
+  }
+}
+
+.navbar {
+  height: 12vh;
+  display: flex;
+  background-color: $blue;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2em;
+}
+
+.form,
+.dashboard {
+  min-height: 82vh;
+  display: grid;
+  place-content: center;
+}
+
+.form {
+  input,
+  button {
+    font-size: 1.1em;
+  }
+  input {
+    padding: 5px;
+    color: $black;
+    margin-bottom: 10px;
+  }
+  button {
+    padding: 10px;
+    background-color: $blue;
+    color: white;
+    border: none;
+  }
+}
+
+.top {
+  height: 10vh;
+  margin: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  .dashboard-header {
+    color: $black;
+    opacity: 0.8;
+    font-size: 1.5em;
+  }
+  .show-passwords {
+    background-color: $green;
+    padding: 10px;
+    color: white;
+    border: none;
+  }
+}
+
+table,
+td,
+th {
+  border: 1px solid $black;
+  border-collapse: collapse;
+}
+.table {
+  * {
+    color: $black;
+    text-align: center;
+  }
+  td,
+  th {
+    padding: 10px;
+  }
+  tr {
+    font-weight: 300;
+  }
+  th {
+    font-size: 1.2em;
+  }
+  width: 50%;
+  margin: 2em auto;
+  button {
+    padding: 10px;
+    border: none;
+    margin: 0 10px;
+    color: white;
+  }
+  .delete-user {
+    background-color: $red;
+  }
+  .change-password {
+    background-color: $yellow;
+  }
+}
+
+.add-user {
+  width: 20%;
+  margin: 2em auto;
+  display: grid;
+  gap: 1em;
+  input {
+    padding: 5px;
+    color: $black;
+  }
+  button {
+    padding: 10px;
+    background-color: $green;
+    color: white;
+    border: none;
+  }
+}
