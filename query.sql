@@ -2,6 +2,7 @@
 -- import into PHPMyAdmin or your SQL Dashboard
 
 create database passwordManager;
+use passwordManager;
 create table auth (
     id int auto_increment primary key,
     username varchar(255) unique,
